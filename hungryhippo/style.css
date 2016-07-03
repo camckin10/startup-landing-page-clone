@@ -1,6 +1,55 @@
 body{
   background-color: LightGray;
+  margin:0;
+  padding:0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #838994;
+  letter-spacing: 0.03em;
 }
 div{
   border: 1px solid chocolate;
+  transition: all 0.10s ease;
+  background:yellow;
+  padding:20px;
+}
+
+div:hover{
+  background:pink;
+  padding:20px;
+}
+.links{
+  text-align:center;
+  float:right;
+  display:inline-block;
+}
+header{
+background-color: #fff;
+position: fixed;
+width: 100%;
+border-bottom: 1px solid #DDD;
+}
+
+.top-navigation{
+  background-color:#fff;
+  float:right;
+}
+.top-navigation > .content{
+  width:970 px;
+  height:70 px;
+  margin:0 auto;
+  padding: 0 px 15 px;
+}
+.div-content{
+  background-image: image("karma-logo.svg");
+}
+.top-navigation .links > .active{
+  color:#4c5058;
+  font-weight:500;
+}
+a.menu_links {
+  cursor: pointer;
+}
+li:hover{
+  color:blue;
 }
