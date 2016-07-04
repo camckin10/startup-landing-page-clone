@@ -1,3 +1,10 @@
+html{
+  box-sizing:border-box;
+}
+*,*:before, *:after{
+  box-sizing:inherit;
+}
+
 body{
   background-color: LightGray;
   margin:0;
@@ -7,15 +14,20 @@ body{
   color: #838994;
   letter-spacing: 0.03em;
 }
+h1,h3{
+  text-align: center;
+  font-size: 40px;
+  overflow: auto;
+}
 div{
   border: 1px solid chocolate;
   transition: all 0.10s ease;
-  background:yellow;
+  background:white;
   padding:20px;
 }
 
 div:hover{
-  background:pink;
+  background:orange;
   padding:20px;
 }
 .links{
@@ -34,14 +46,34 @@ border-bottom: 1px solid #DDD;
   background-color:#fff;
   float:right;
 }
+.top-navigation .links{
+  float:right;
+  font-family:'Roboto', sans-serif;
+  color:#838994;
+  font-size: 16px;
+  margin-top:25px;
+  -webkit-font-smoothing:antialiased;
+}
+.top-navigation .links li{
+  display:inline-block;
+  margin-left:25px;
+}
+.top-navigation .links .active{
+  color:#4c5058;
+  font-weight:500;
+}
+.top-navigation .links li:hover{
+  cursor:pointer;
+  color:#333333;
+}
 .top-navigation > .content{
-  width:970 px;
   height:70 px;
-  margin:0 auto;
   padding: 0 px 15 px;
 }
 .div-content{
   background-image: image("karma-logo.svg");
+  margin:0 auto;
+  width:970px;
 }
 .top-navigation .links > .active{
   color:#4c5058;
@@ -55,4 +87,33 @@ li:hover{
 }
 .logo{
   height:70px;
+}
+.introduction{
+  background-image:url('images/first-backgroundcopy.jpg');
+  background-image:fixed;
+  background-position:center bottom;
+  background-repeat:no-repeat;
+  background-size:cover;
+  height:45.938rem;
+}
+.content{
+  text-color:black;
+}
+
+button {
+  text-shadow:none;
+  border-style:none;
+  border-radius:10px;
+  padding:1rem 1.5rem;
+  margin: 0 auto;
+  margin-bottom:auto;
+  width:20px;
+  font-size:20px;
+  color:black;
+  background-color:gray;
+}
+
+button:hover{
+  cursor:pointer;
+  background-color:white;
 }
